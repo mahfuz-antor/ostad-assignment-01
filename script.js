@@ -29,23 +29,22 @@ console.log(storeDiscount(55));
 // ****** END TASK 01 ******
 
 // Task: 2) Topic: Filter Even Numbers
-
 let taskTwoArr = [12, 34, 45, 23, 6, 78, 54, 90];
-// console.log(taskTwoArr);
-for (let element in taskTwoArr) {
-  if (taskTwoArr[element] % 2 === 0) {
-    // let resultArr = []
-    // resultArr.push(taskTwoArr[element]);
-    console.log(taskTwoArr[element]);
-  }
+
+function filterEven(arr) {
+  return arr.filter(function (item) {
+    return item % 2 === 0;
+  });
 }
+
+console.log(filterEven(taskTwoArr));
 
 // ****** END TASK 02 ******
 
 // Task: 3) Topic: Multiplication Table Generator
 function multiplyTable(value) {
   for (let i = 1; i <= 10; i++) {
-    let multiplication = `${i} * ${value} = ${i * value}`;
+    let multiplication = `${i} x ${value} = ${i * value}`;
     console.log(multiplication);
   }
 }
