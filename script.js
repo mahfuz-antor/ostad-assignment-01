@@ -24,9 +24,9 @@ function storeDiscount(amount) {
   }
 }
 
-console.log(storeDiscount(44));
+console.log(storeDiscount(55));
 
-// ***** END TASK 01 ******
+// ****** END TASK 01 ******
 
 // Task: 2) Topic: Filter Even Numbers
 
@@ -40,7 +40,7 @@ for (let element in taskTwoArr) {
   }
 }
 
-// ***** END TASK 02 ******
+// ****** END TASK 02 ******
 
 // Task: 3) Topic: Multiplication Table Generator
 function multiplyTable(value) {
@@ -52,25 +52,32 @@ function multiplyTable(value) {
 
 multiplyTable(5);
 
-// ***** END TASK 03 ******
+// ****** END TASK 03 ******
 
 // Task: 4) Topic: Grade Calculator (JavaScript Switch Case)
-let studentResult = 80;
-switch (true) {
-  case studentResult >= 90:
-    console.log("A");
-    break;
-  case studentResult >= 80:
-    console.log("B");
-    break;
-  case studentResult >= 70:
-    console.log("C");
-    break;
-  case studentResult >= 60:
-    console.log("D");
-    break;
-  case studentResult < 60:
-    console.log("F");
+// let studentResult = 80;
+function calculateGrade(marks) {
+  let grade;
+  switch (true) {
+    case marks >= 90:
+      grade = "A";
+      break;
+    case marks >= 80:
+      grade = "B";
+      break;
+    case marks >= 70:
+      grade = "C";
+      break;
+    case marks >= 60:
+      grade = "D";
+      break;
+    default:
+      grade = "F";
+  }
+
+  return grade;
 }
 
-// ***** END TOTAL TASK ******
+console.log(calculateGrade(99));
+
+// ****** END TOTAL TASK ******
